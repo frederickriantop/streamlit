@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 
-day_rental_df = pd.read_csv("..\Data\day.csv")
-hour_rental_df = pd.read_csv("..\Data\hour.csv")
+day_rental_df = pd.read_csv("https://raw.githubusercontent.com/frederickriantop/streamlit/main/data/day.csv")
+hour_rental_df = pd.read_csv("https://raw.githubusercontent.com/frederickriantop/streamlit/main/data/hour.csv")
 day_rental_df['dteday'] = pd.to_datetime(day_rental_df['dteday'])
 hour_rental_df['dteday'] = pd.to_datetime(hour_rental_df['dteday'])
 st.header('Dicoding Bike Sharing Dashboard :')
